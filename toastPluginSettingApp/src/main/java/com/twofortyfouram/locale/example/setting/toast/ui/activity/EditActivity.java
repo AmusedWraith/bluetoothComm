@@ -79,6 +79,7 @@ public final class EditActivity extends AbstractAppCompatPluginActivity {
     public Bundle getResultBundle() {
         Bundle result = null;
 
+        
         final String message = ((EditText) findViewById(android.R.id.text1)).getText().toString();
         if (!TextUtils.isEmpty(message)) {
             result = PluginBundleValues.generateBundle(getApplicationContext(), message);
