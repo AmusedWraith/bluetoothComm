@@ -13,9 +13,11 @@
  * limitations under the License.
  */
 
-package com.twofortyfouram.locale.example.setting.toast.receiver;
+package com.steamvania.bluetoothComm.receiver;
 
-import com.twofortyfouram.locale.example.setting.toast.bundle.PluginBundleValues;
+
+
+import com.steamvania.bluetoothComm.bundle.PluginBundleValues;
 import com.twofortyfouram.locale.sdk.client.receiver.AbstractPluginSettingReceiver;
 
 import android.content.Context;

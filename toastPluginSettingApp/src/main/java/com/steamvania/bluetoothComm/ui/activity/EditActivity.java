@@ -1,5 +1,5 @@
 /*
- * android-toast-setting-plugin-for-locale <https://github.com/twofortyfouram/android-toast-setting-plugin-for-locale>
+ * bluetoothComm <https://github.com/AmusedWraith/bluetoothComm>
  * Copyright 2014 two forty four a.m. LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.twofortyfouram.locale.example.setting.toast.ui.activity;
+package com.steamvania.bluetoothComm.ui.activity;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -24,8 +24,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.twofortyfouram.locale.example.setting.toast.R;
-import com.twofortyfouram.locale.example.setting.toast.bundle.PluginBundleValues;
+import com.steamvania.bluetoothComm.R;
+import com.steamvania.bluetoothComm.bundle.PluginBundleValues;
 import com.twofortyfouram.locale.sdk.client.ui.activity.AbstractAppCompatPluginActivity;
 import com.twofortyfouram.log.Lumberjack;
 

@@ -6,7 +6,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.twofortyfouram.locale.example.setting.toast"
+          package="com.steamvania.bluetoothComm"
           android:installLocation="internalOnly">
 
     <!-- This allows the plug-in to appear on non-touchscreen devices like Google TV.
@@ -31,7 +31,7 @@
          applicable Service) should be put into a different process. This example plug-in
          creates two processes. -->
     <application
-            android:name="com.twofortyfouram.locale.example.setting.toast.PluginApplication"
+            android:name="com.steamvania.bluetoothComm.PluginApplication"
             android:allowBackup="true"
             android:fullBackupContent="true"
             android:hardwareAccelerated="true"
@@ -39,7 +39,7 @@
             android:label="@string/app_name" tools:ignore="UnusedAttribute">
 
         <activity
-                android:name="com.twofortyfouram.locale.example.setting.toast.ui.activity.EditActivity"
+                android:name="com.steamvania.bluetoothComm.ui.activity.EditActivity"
                 android:exported="false"
                 android:label="@string/plugin_name"
                 android:theme="@style/Theme.AppCompat"
@@ -57,11 +57,11 @@
                  - The Activity requires permissions not available to the host
         -->
         <activity-alias
-                android:name="com.twofortyfouram.locale.example.setting.toast.ui.activity.PluginActivity"
+                android:name="com.steamvania.bluetoothComm.ui.activity.PluginActivity"
                 android:exported="true"
                 android:icon="@drawable/ic_plugin"
                 android:label="@string/plugin_name"
-                android:targetActivity="com.twofortyfouram.locale.example.setting.toast.ui.activity.EditActivity"
+                android:targetActivity="com.steamvania.bluetoothComm.ui.activity.EditActivity"
                 tools:ignore="ExportedActivity">
             <!-- this Intent filter allows the plug-in to be discovered by the host. -->
             <intent-filter>
@@ -94,7 +94,7 @@
                 - There are multiple BroadcastReceivers for com.twofortyfouram.locale.intent.action.FIRE_SETTING
         -->
         <receiver
-                android:name="com.twofortyfouram.locale.example.setting.toast.receiver.FireReceiver"
+                android:name="com.steamvania.bluetoothComm.receiver.FireReceiver"
                 android:exported="true"
                 android:process=":background"
                 tools:ignore="ExportedReceiver">
