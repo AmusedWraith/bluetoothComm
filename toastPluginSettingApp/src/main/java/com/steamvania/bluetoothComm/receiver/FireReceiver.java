@@ -39,6 +39,9 @@ public final class FireReceiver extends AbstractPluginSettingReceiver {
 
     @Override
     protected void firePluginSetting(@NonNull final Context context, @NonNull final Bundle bundle) {
-        Toast.makeText(context, PluginBundleValues.getMessage(bundle), Toast.LENGTH_LONG).show();
+
+        String tempText = PluginBundleValues.getMessage(bundle) + PluginBundleValues.getMacAddress(bundle);
+
+        Toast.makeText(context, tempText, Toast.LENGTH_LONG).show();
     }
 }

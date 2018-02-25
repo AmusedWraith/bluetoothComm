@@ -65,7 +65,7 @@
                 tools:ignore="ExportedActivity">
             <!-- this Intent filter allows the plug-in to be discovered by the host. -->
             <intent-filter>
-                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING"/>
+                <action android:name="com.steamvania.bluetoothComm.intent.action.EDIT_SETTING"/>
             </intent-filter>
         </activity-alias>
 
@@ -101,7 +101,7 @@
 
             <!-- this Intent filter allows the plug-in to discovered by the host. -->
             <intent-filter>
-                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING"/>
+                <action android:name="com.steamvania.bluetoothComm.intent.action.FIRE_SETTING"/>
             </intent-filter>
         </receiver>
     </application>

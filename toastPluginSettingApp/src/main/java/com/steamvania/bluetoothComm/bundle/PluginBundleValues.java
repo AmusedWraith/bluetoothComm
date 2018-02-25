@@ -15,7 +15,7 @@
 
 package com.steamvania.bluetoothComm.bundle;
 
-import com.twofortyfouram.assertion.Assertions;
+
 import com.twofortyfouram.assertion.BundleAssertions;
 import com.twofortyfouram.log.Lumberjack;
 import com.twofortyfouram.spackle.AppBuildInfo;
