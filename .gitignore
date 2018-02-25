@@ -9,3 +9,5 @@ bin/
 build/
 gen/
 local.properties
+toastPluginSettingApp/release/output.json
+toastPluginSettingApp/release/toastPluginSettingApp-release.apk

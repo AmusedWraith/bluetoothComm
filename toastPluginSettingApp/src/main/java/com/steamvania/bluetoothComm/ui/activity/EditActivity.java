@@ -66,7 +66,7 @@ public final class EditActivity extends AbstractAppCompatPluginActivity {
     public void onPostCreateWithPreviousResult(@NonNull final Bundle previousBundle,
             @NonNull final String previousBlurb) {
         final String message = PluginBundleValues.getMessage(previousBundle);
-        ((EditText) findViewById(android.R.id.text1)).setText(message);
+        ((EditText) findViewById(R.id.edit_message)).setText(message);
     }
 
     @Override
@@ -80,7 +80,7 @@ public final class EditActivity extends AbstractAppCompatPluginActivity {
         Bundle result = null;
 
         
-        final String message = ((EditText) findViewById(android.R.id.text1)).getText().toString();
+        final String message = ((EditText) findViewById(R.id.edit_message)).getText().toString();
         if (!TextUtils.isEmpty(message)) {
             result = PluginBundleValues.generateBundle(getApplicationContext(), message);
         }

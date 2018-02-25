@@ -12,6 +12,7 @@ dependencies {
     compile group:'com.twofortyfouram', name:'android-spackle', version:"${TWOFORTYFOURAM_SPACKLE_VERSION_MATCHER}"
 
     androidTestCompile group:'com.twofortyfouram', name:'android-test', version:"${TWOFORTYFOURAM_TEST_VERSION_MATCHER}"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 }
 
 android {
