@@ -44,8 +44,12 @@ public final class PluginBundleValues {
      */
     @NonNull
     public static final String BUNDLE_EXTRA_STRING_MESSAGE
-            = "com.twofortyfouram.locale.example.setting.toast.extra.STRING_MESSAGE"; //$NON-NLS-1$
+            = "com.steamvania.bluetoothComm.extra.STRING_MESSAGE"; //$NON-NLS-1$
 
+
+    @NonNull
+    public static final String BUNDLE_EXTRA_STRING_MACADDRESS
+            = "com.steamvania.bluetoothComm.extra.STRING_MACADDRESS"; //$NON-NLS-1$
     /**
      * Type: {@code int}.
      * <p>
@@ -75,6 +79,7 @@ public final class PluginBundleValues {
 
         try {
             BundleAssertions.assertHasString(bundle, BUNDLE_EXTRA_STRING_MESSAGE, false, false);
+            BundleAssertions.assertHasString(bundle, BUNDLE_EXTRA_STRING_MACADDRESS, false, false);
             BundleAssertions.assertHasInt(bundle, BUNDLE_EXTRA_INT_VERSION_CODE);
             BundleAssertions.assertKeyCount(bundle, 2);
         } catch (final AssertionError e) {
@@ -92,13 +97,15 @@ public final class PluginBundleValues {
      */
     @NonNull
     public static Bundle generateBundle(@NonNull final Context context,
-            @NonNull final String message) {
+            @NonNull final String message, @NonNull final String macAddress) {
         assertNotNull(context, "context"); //$NON-NLS-1$
         assertNotEmpty(message, "message"); //$NON-NLS-1$
+        assertNotEmpty(macAddress, "macAddress"); //$NON-NLS-1$
 
         final Bundle result = new Bundle();
         result.putInt(BUNDLE_EXTRA_INT_VERSION_CODE, AppBuildInfo.getVersionCode(context));
         result.putString(BUNDLE_EXTRA_STRING_MESSAGE, message);
+        result.putString(BUNDLE_EXTRA_STRING_MACADDRESS, macAddress);
 
         return result;
     }
@@ -107,6 +114,13 @@ public final class PluginBundleValues {
      * @param bundle A valid plug-in bundle.
      * @return The message inside the plug-in bundle.
      */
+
+
+    @NonNull
+    public static String getMacAddress(@NonNull final Bundle bundle) {
+        return bundle.getString(BUNDLE_EXTRA_STRING_MACADDRESS);
+    }
+
     @NonNull
     public static String getMessage(@NonNull final Bundle bundle) {
         return bundle.getString(BUNDLE_EXTRA_STRING_MESSAGE);

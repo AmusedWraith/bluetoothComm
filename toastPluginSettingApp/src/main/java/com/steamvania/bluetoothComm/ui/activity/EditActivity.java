@@ -81,8 +81,9 @@ public final class EditActivity extends AbstractAppCompatPluginActivity {
 
         
         final String message = ((EditText) findViewById(R.id.edit_message)).getText().toString();
+        final String macAddress = ((EditText) findViewById(R.id.edit_macaddress)).getText().toString();
         if (!TextUtils.isEmpty(message)) {
-            result = PluginBundleValues.generateBundle(getApplicationContext(), message);
+            result = PluginBundleValues.generateBundle(getApplicationContext(), message, macAddress);
         }
 
         return result;

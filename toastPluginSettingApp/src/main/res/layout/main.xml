@@ -47,10 +47,11 @@
         android:layout_height="19dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:text="TextView"
+        android:layout_marginTop="32dp"
+        android:text="MAC Address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_message" />
 
     <EditText
         android:id="@+id/edit_macaddress"
@@ -60,6 +61,6 @@
         android:layout_marginTop="16dp"
         android:hint="@string/mac_hint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </android.support.constraint.ConstraintLayout>
